@@ -1,0 +1,10 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Links {
+    list-style: none;
+    padding: 20px;
+}
