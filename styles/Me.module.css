@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+.Container {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    background: #c7d2fe66;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+    backdrop-filter: blur(10px);
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.dataArea {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.Image {
+    border-radius: 10px;
+}
+
+.Data {
+    font-size: 56px;
+    font-family: 'Concert One', cursive;
+}

@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from './Components/Navbar'
 import Hobbies from './Objects/Hobbies'
@@ -20,7 +19,9 @@ export default function Home() {
           <h1>
             Home.Me();
           </h1>
-          <Me />
+          <div className={styles.Me}>
+            <Me />
+          </div>
         </div>
         <div>
           <h1>
