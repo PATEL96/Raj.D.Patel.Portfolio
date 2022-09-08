@@ -21,14 +21,24 @@ export default function Me() {
                 <div className={styles.Data2}>
                     Hi I'm Raj! I'm Really Fond of Learning New stuff
                 </div>
+                <div className={styles.Data2}>
+                    I'm In 2nd Year of study <a href='http://utu.ac.in' target='_blank' rel="noopener noreferrer"> @U.T.U.</a>
+                </div>
+                <div className={styles.Data2}>
+                    I'm 19 and I've been Coding Since 16.
+                </div>
+                <div className={styles.Data2}>
+                    I've gain Proficiency in Languages like <br></br> C/C++, JAVA, JAVASCRIPT, Rust, ReactJS,<br></br> NextJS, NodeJS, SQL, Solidity.
+                </div>
             </div>
-        </Container>
+        </Container >
     );
 }
 
 const Container = styled(animated.div)`
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     padding: 3rem;
     background: #c7d2fe2e;
     border-radius: 10px;
@@ -38,5 +48,4 @@ const Container = styled(animated.div)`
     margin-right: 100px;
     margin-left: 100px;
     background-clip: border-box;
-    cursor: pointer;
 `

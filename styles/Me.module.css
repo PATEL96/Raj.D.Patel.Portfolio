@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 .dataArea {
-    justify-content: center;
+    padding: 10px;
+    justify-content: left;
+    cursor: default;
     align-items: center;
 }
 
