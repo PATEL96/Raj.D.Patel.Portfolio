@@ -1,7 +1,7 @@
 export default function Qualifications() {
     return (
         <div>
-            My Qualifications!!
+            Certificates Coming Soon!!
         </div>
     );
 }

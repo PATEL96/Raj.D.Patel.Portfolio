@@ -9,7 +9,7 @@ const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg)
 
 export default function Me() {
 
-    const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 10, tension: 250, friction: 100 } }));
+    const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 250, friction: 100 } }));
 
     return (
         <Container onMouseMove={({ clientX: x, clientY: y }) => (set({ xys: calc(x, y) }))} onMouseLeave={() => set({ xys: [0, 0, 1] })} style={{ transform: props.xys.interpolate(trans) }} >
