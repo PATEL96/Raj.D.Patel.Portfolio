@@ -25,7 +25,7 @@ export default function Me() {
                     I'm In 2nd Year of study <a href='http://utu.ac.in' target='_blank' rel="noopener noreferrer"> @U.T.U.</a>
                 </div>
                 <div className={styles.Data2}>
-                    I'm 19 and I've been Coding Since 16.
+                    I Love helping the Community with my Skills.
                 </div>
                 <div className={styles.Data2}>
                     I've gain Proficiency in Languages like <br></br> C/C++, JAVA, JAVASCRIPT, Rust, ReactJS,<br></br> NextJS, NodeJS, SQL, Solidity.

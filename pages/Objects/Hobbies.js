@@ -1,15 +1,29 @@
+import Slider from "react-slick";
+import { List } from "../Props/List";
+import styles from '../../styles/Hobbies.module.css'
+import Image from "next/image";
+
+const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
+    speed: 500
+};
 export default function Hobbies() {
     return (
         <div>
-            <h3>Majority of Time,all I do is Coding but other than that Ialso love to Watch Anime, Read Manga, Watch Series, and Other Programmer's Stuff</h3>
-            <div>
-                <h4>
-                    Personal Recommendation!
-                </h4>
-                <div>
-                    Slider effect!
-                </div>
-            </div>
-        </div>
+            <h2>Center Mode</h2>
+            <Slider {...settings}>
+                {List.Links.map((item, index) => {
+                    return (
+                        <div key={index} className={styles.Container}>
+                            <Image src={item} height={400} width={300} alt="none"></Image>
+                        </div>
+                    );
+                })}
+            </Slider >
+        </div >
     );
 }
