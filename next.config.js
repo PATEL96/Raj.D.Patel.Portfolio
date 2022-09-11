@@ -3,6 +3,6 @@ module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['upload.wikimedia.org'],
+    domains: ['upload.wikimedia.org', 'cdn.animixplay.to'],
   }
 }

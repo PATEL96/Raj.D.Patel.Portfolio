@@ -1,6 +1,6 @@
 .Container {
-    width: 65%;
-    margin: 7rem auto;
+    width: 80%;
+    margin: 1rem auto;
 }
 
 .Slider {
@@ -9,11 +9,12 @@
 
 .dataBase {
     display: flex;
-    position: sticky;
+    padding: 10px;
     align-items: center;
+    margin-left: 10px;
     justify-content: center;
 }
 
-.ImageContainer {
-    padding: 10px;
+.Image {
+    border-radius: 10px;
 }
