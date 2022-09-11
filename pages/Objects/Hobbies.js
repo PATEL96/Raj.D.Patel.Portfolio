@@ -19,22 +19,25 @@ export default function Hobbies() {
             <h3>
                 Other than Coding I also like Anime, Manga, Web Series.
             </h3>
-            <h4>
-                Here are some Personal Recommendations.
-            </h4>
-            <div className={styles.Container}>
-                <Slider {...settings} className={styles.Slider}>
-                    {List.Images.map((image, index) => (
-                        <div>
-                            <a className={styles.ImageContainer} href={List.Links[index]}>
-                                <Image src={image} alt='none' height={300} width={220} className={styles.Image} />
-                            </a>
+            <div>
+
+                <h4>
+                    Here are some Personal Recommendations.
+                </h4>
+                <div className={styles.Container}>
+                    <Slider {...settings} className={styles.Slider}>
+                        {List.Images.map((image, index) => (
                             <div>
-                                {List.Names[index]}
+                                <a className={styles.ImageContainer} href={List.Links[index]} target='_blank'>
+                                    <Image src={image} alt='none' height={300} width={220} className={styles.Image} />
+                                </a>
+                                <div>
+                                    {List.Names[index]}
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </Slider>
+                        ))}
+                    </Slider>
+                </div>
             </div>
         </div>
     );
