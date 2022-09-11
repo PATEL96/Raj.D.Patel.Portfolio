@@ -1,4 +1,19 @@
 .Container {
-    background: transparent;
-    height: 400px;
+    width: 65%;
+    margin: 7rem auto;
+}
+
+.Slider {
+    padding: 10px;
+}
+
+.dataBase {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImageContainer {
+    padding: 10px;
 }

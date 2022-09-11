@@ -1,29 +1,39 @@
-import Slider from "react-slick";
-import { List } from "../Props/List";
-import styles from '../../styles/Hobbies.module.css'
 import Image from "next/image";
+import { useState } from "react";
+import styles from '../../styles/Hobbies.module.css'
+import Slider from "react-slick/";
+import { List } from "../Props/List";
 
-const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 3,
-    speed: 500
-};
 export default function Hobbies() {
+
+    const settings = {
+        infinite: true,
+        lazyload: true,
+        speed: 300,
+        slidesToShow: 3,
+        centerMode: true,
+        centerPadding: 0,
+    };
+
     return (
         <div>
-            <h2>Center Mode</h2>
-            <Slider {...settings}>
-                {List.Links.map((item, index) => {
-                    return (
-                        <div key={index} className={styles.Container}>
-                            <Image src={item} height={400} width={300} alt="none"></Image>
+            <h3>
+                Other than Coding I also like Anime, Manga, Web Series.
+            </h3>
+            <div className={styles.Container}>
+                <Slider {...settings} className={styles.Slider}>
+                    {List.Links.map((image, index) => (
+                        <div>
+                            <div className={styles.ImageContainer}>
+                                <Image src={image} alt='none' height={300} width={220} />
+                            </div>
+                            <div>
+                                {List.Names[index]}
+                            </div>
                         </div>
-                    );
-                })}
-            </Slider >
-        </div >
+                    ))}
+                </Slider>
+            </div>
+        </div>
     );
 }
