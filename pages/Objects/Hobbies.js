@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useState } from "react";
 import styles from '../../styles/Hobbies.module.css'
 import Slider from "react-slick/";
 import { List } from "../Props/List";
