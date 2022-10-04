@@ -2,17 +2,11 @@ import styles from '../../styles/Me.module.css';
 import profile from '../Props/Profile2.jpeg'
 import Image from 'next/image';
 import styled from 'styled-components'
-import { useSpring, animated } from 'react-spring';
-
-const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1]
-const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 export default function Me() {
 
-    const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 250, friction: 100 } }));
-
     return (
-        <Container onMouseMove={({ clientX: x, clientY: y }) => (set({ xys: calc(x, y) }))} onMouseLeave={() => set({ xys: [0, 0, 1] })} style={{ transform: props.xys.interpolate(trans) }} >
+        <Container>
             <Image src={profile} height={450} width={350} className={styles.Image} />
             <div className={styles.dataArea}>
                 <div className={styles.Data1}>
@@ -35,13 +29,13 @@ export default function Me() {
     );
 }
 
-const Container = styled(animated.div)`
+const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3rem;
     background: #c7d2fe2e;
-    border-radius: 10px;
+    border-radius: 8px;
     z-index: 1;
     position: relative;
     backdrop-filter: blur(10px);

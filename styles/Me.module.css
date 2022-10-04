@@ -8,17 +8,17 @@
 }
 
 .Image {
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .Data1 {
     padding: 10px;
     font-size: 56px;
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One';
 }
 
 .Data2 {
     padding: 10px;
     font-size: 24px;
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One';
 }
