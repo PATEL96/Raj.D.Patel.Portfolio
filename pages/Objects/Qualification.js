@@ -7,7 +7,8 @@ export default function Qualifications() {
                 autoStart: true, loop: true, delay: 50, strings: [
                     "I'm Student.",
                     "I'm Web Developer.",
-                    "I'm Blockchain Developer."
+                    "I'm Blockchain Developer.",
+                    "I'm Learnig Stuff."
                 ]
             }} />
         </div>
