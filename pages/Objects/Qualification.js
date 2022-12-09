@@ -1,8 +1,9 @@
 import TypewriterComponent from "typewriter-effect";
+import style from '../../styles/Qualification.module.css';
 export default function Qualifications() {
 
     return (
-        <div className="typing">
+        <div className={style.typing}>
             <TypewriterComponent options={{
                 autoStart: true, loop: true, delay: 50, strings: [
                     "I'm Student.",
